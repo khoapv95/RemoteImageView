@@ -32,9 +32,9 @@ public class RemoteImageFetcher: ObservableObject {
   @Published var imageData = Data()
   let url: URL
 
-  public init(url: URL) {
-    self.url = url
-  }
+    public init(from url: URL) {
+      self.url = url
+    }
 
   // 1
   public func fetch() {
